@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Recipe Lab</title>
+
+    <style>
+
+        body {
+            background-color: #d3d3d3;
+            font:black;
+        }  
+        h1 {
+            font-family: 'Anton', sans-serif;
+            color: orange;
+        }
+        h3 {
+            font-family: 'Anton', sans-serif;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul, li {
+            margin: 0px;
+            padding: 0px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* grid-auto-rows: minmax(150px, auto); */
+            grid-gap: 15px;
+            padding: 10px;
+            
+        }
+        .grid-item {
+            padding: 20px;
+            text-align: center;
+            background-color: #b19cd9;
+        }
+
+        .grid-item-1{
+            grid-column: span 2;
+        }
+        .grid-item-2{
+            grid-column: span 2;
+        }
+        .grid-item-9{
+            grid-column: span 2;
+        }
+
+        
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+           
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+           
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            
+        } 
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+        } 
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class = "grid-container mobile">
+        <div class = "grid-item grid-item-1">
+            <h1>Chocolate Chip Cookies</h1>
+            <p>These are the most <strong>delicious</strong> chocolate chip cookies you will ever have. They are ooey gooey perfection and 
+                this recipe is fool proof!</p>
+                <p>Adapted recipe from The Dough Will Rise Again. Click below to view original recipe.</p>
+            <button class = "button"
+                    onclick = "window.open('https://thedoughwillriseagain.wordpress.com/2012/01/19/brown-sugar-oatmeal-coconut-chewies/')">
+                    Original Recipe Link
+            </button>
+        </div>
+        <div class = "grid-item grid-item-2">
+            <h3> Here are the ingredients you'll need and the steps to creating the perfect chocolate chip cookies! </h3>
+        </div>
+        <div class = "grid-item grid-item-3">
+            <h2 class> Ingredients </h2>
+                <ul>
+                    <li>1 cup butter, softened</li>
+                    <li>1 1/4 cup brown sugar</li>
+                    <li>1/2 cup sugar</li>
+                    <li>2 tsp vanilla extract</li>
+                    <li>2 eggs</li>
+                    <li>1 tsp baking soda</li>
+                    <li>1 tsp baking powder</li>
+                    <li>1/2 tsp salt</li>
+                    <li>2 1/4 cups all purpose flour</li>
+                </ul> 
+                <img src = "ingriedients.jpeg" width = "60%" height = "50%">
+        </div>
+        <div class = "grid-item grid-item-4">
+
+            <p>1. Preheat oven to 350 degrees. Cream together butter and
+                sugars, until they are well combined. 
+            </p>
+            <img src = "buttersugar.jpg" width = "60%" height = "65%">
+        </div>
+
+        <div class = "grid-item grid-item-5">
+            <p>2. Add one egg and mix until it's fully incorporated. Then add the second egg and vanilla extract and mix until everything is 
+                evenly incorporated.
+            </p>
+            <img src = "eggadd.jpg" width = "75%" height = "75%">
+        </div>
+
+        <div class = "grid-item grid-item-6">
+            <p>3. Add baking soda, baking powder and salt to the wet mixture. Mix until well distributed.</p>
+            <img src = "bakingsoda.jpeg" width = "80%" height = "95%">
+        </div>
+
+        <div class = "grid-item grid-item-7">
+            <p>4. Add about 1/2 your flour, and mix until the flour is just incorporated. Scrape down the sides of your bowl and then add the 
+                second half of your flour, mixing until just incorporated. Don't overmix or you'll end up with tough cookies.
+            </p>
+            <img src = "flour.jpeg" width = "50%" height = "50%">
+        </div>
+        
+        <div class = "grid-item grid-item-8">
+            <p>5. Roll dough into balls. Place dough balls on a baking sheet lined with parchment paper. Leave about 2 inches between each
+                cookie. Bake for 8-10 minutes or until the edges are lightly brown.
+            </p>
+            <img src = "doughballs.jpg" width = "75%" height = "75%">
+        </div>
+
+        <div class = "grid-item grid-item-9">
+            <p>6. Let the cookies cool on the baking sheet for about 5 minutes and then move to a cooling rack. Once they are fully cooled, 
+                they can be stored in a ziploc bag or airtight container for up to a week! 
+            </p>
+            <img src = "cookies.jpg" width = "50%" height = "50%">
+        </div>
+
+    </div>
+</body>
+</html>
